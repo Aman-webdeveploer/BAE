@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: Arial;
+    color: white;
+}
+
+.topbar {
+    background: yellow;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.back {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.coinArea {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.coinIcon {
+    width: 35px;
+}
+
+#coinDisplay {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: black;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+.submitBtn {
+    background: yellow;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}

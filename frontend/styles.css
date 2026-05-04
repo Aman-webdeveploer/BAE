@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.top-bar {
+  background-color: red;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 1px 1px; */
+  width: 100%;
+  /* margin-bottom: 100px; */
+  z-index: 1000;
+}
+
+.back-button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo span {
+  font-weight: normal;
+  font-size: 12px;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: wheat;
+}
+
+.coin, .wallet {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+#coinDisplay {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 4px;
+    color: black;
+}
+
+
+.coinIcon, .wallet img {
+  height: 35px;
+  margin-right: 5px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+/* HIDE CHECKBOX */
+#sidebarToggle {
+  display: none;
+}
+
+/* OPEN BUTTON */
+.open-btn {
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* SIDEBAR BASE */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #ff0000;
+  border-right: 2px solid #000000;
+  transition: 0.3s;
+  overflow-y: auto; /* SCROLL ENABLED */
+  z-index: 1000;
+}
+
+/* SHOW SIDEBAR WHEN CHECKED */
+#sidebarToggle:checked ~ .sidebar {
+  right: 0;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+#sidebarToggle:checked ~ .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  /* color: #000; */
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+/* PROFILE SECTION */
+.sidebar-header {
+  text-align: center;
+  padding: 30px 10px;
+  position: relative;
+  border-bottom: 1px solid #e6a1a1;
+
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.username {
+  margin-top: 10px;
+}
+
+/* MENU ITEMS */
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #e6a1a1;
+}
+
+body.dark .menu a {
+  color: #fff;
+  border-color: #444;
+}
+
+.menu a:hover {
+  background: #f0f0f0;
+}
+
+body.dark .menu a:hover {
+  background: #333;
+}
+
+.game-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+.mode {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.mode img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.bottom-bar {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.bottom-bar img {
+  height: 30px;
+}
+
+.mission-icon {
+  font-weight: bold;
+  text-align: center;
+}
+
+.material-icons {
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+}
+
+
+
+/* #navbar {
+    margin: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 2;
+    background: rgba(255, 0, 0, 0.307);
+    backdrop-filter: blur(50px);
+    padding: 20px;
+    position: fixed;
+    color: white;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    /* text-align: center;
+ } */
+

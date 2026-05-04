@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wallet</title>
+    <link rel="stylesheet" href="wallet.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <span class="back" onclick="history.back()">←</span>
+
+        <div class="coinArea">
+            <img src="/frontend/img/coin.png.png" class="coinIcon">
+            <span id="coinDisplay">0</span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="walletBox">
+            <h2>Your Wallet Balance</h2>
+            <img src="/frontend/img/coin.png.png" class="coinIcon">
+            <p class="bigCoin"><span id="coinBig">0</span> Coins</p>
+            <p class="amountText">= ₹ <span id="moneyValue">0</span></p>
+            <a href="../main wallet/withdraw/withdraw.html"><button class="withdrawBtn">Withdraw Coins</button></a>
+            <a href="../main wallet/buy coin/buy-coin.html"><button class="withdrawBtn">Buy Coins</button></a>
+            <a href="../missions/Ads-coin.html"><button class="withdrawBtn">Watch Ads</button></a>
+        </div>
+
+    </div>
+
+    <script src="wallet.js"></script>
+</body>
+
+</html>

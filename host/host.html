@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Panel</title>
+    <link rel="stylesheet" href="host.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        
+        <!-- DARK MODE BUTTON -->
+        <button id="darkToggle" class="dark-btn">🌙</button>
+        
+        <!-- SIDEBAR TOGGLE CHECKBOX -->
+        <input type="checkbox" id="sidebarToggle">
+        
+        <!-- OPEN SIDEBAR BUTTON -->
+        <label for="sidebarToggle" class="open-btn">☰</label>
+        
+        <!-- OVERLAY WHEN SIDEBAR IS OPEN -->
+        <label for="sidebarToggle" class="overlay"></label>
+        
+        <h1><p>Host Panel</h1></p>
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <!-- CLOSE BUTTON -->
+                <label for="sidebarToggle" class="close-btn">✖</label>
+
+                <!-- PROFILE AREA -->
+                <!-- <img src="https://i.pravatar.cc/100" class="profile-pic"> -->
+                <h3 class="username">Host Panel</h3>
+            </div>
+
+            <div class="menu">
+                <a href="./Daily-Host/daily-solo-Hosting/soloHost.html">Daily Solo Hosting</a>
+                <a href="./Daily-Host/daily-duo-Hosting/duoHost.html">Daily Duo Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Daily Squad Hosting</a>
+                <a href="/host/CS-Host/cs-Solo-Host.html">CS Solo Hosting</a>
+                <a href="/host/CS-Host/cs-Duo-Host.html">CS Duo Hosting</a>
+                <a href="/host/CS-Host/cs-Squad-Host.html">CS Squad Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Weekly Solo Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Weekly Duo Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Weekly Squad Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Official Solo Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Official Duo Hosting</a>
+                <a href="./Daily-Host/daily-squad-Hosting/squadHost.html">Official Squad Hosting</a>
+            </div>
+        </div>
+    </div>
+    <h1><p>This is Host Panel</h1></p>
+
+    <script>
+        const btn = document.getElementById("darkToggle");
+
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            btn.textContent =
+                document.body.classList.contains("dark") ? "☀️" : "🌙";
+        });
+
+    </script>
+</body>
+
+</html>

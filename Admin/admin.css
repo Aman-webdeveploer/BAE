@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: Arial;
+    color: white;
+}
+
+.topbar {
+    background: yellow;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.back {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.coinArea {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.coinIcon {
+    width: 35px;
+    height: 35px;
+}
+
+.adminText {
+    margin-left: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 15px;
+}
+
+.card {
+    background: #333;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 4px 0;
+    font-size: 18px;
+}
+
+.btnRow {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.approveBtn,
+.rejectBtn {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.approveBtn {
+    background: #00ff00;
+    color: black;
+}
+
+.rejectBtn {
+    background: #ff0000;
+    color: white;
+}

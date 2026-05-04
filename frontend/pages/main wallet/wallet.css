@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial;
+    color: white;
+}
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.back {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.coinArea {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.coinIcon {
+    width: 35px;
+    height: 35px;
+}
+
+#coinDisplay {
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.container {
+    padding: 20px;
+}
+
+.walletBox {
+    background: #333;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.bigCoin {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.amountText {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.withdrawBtn {
+    background: yellow;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}

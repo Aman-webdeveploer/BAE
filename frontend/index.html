@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BATTLE ARENA</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- <link rel="stylesheet" href="freefire.css"> -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+
+</head>
+
+<body>
+
+  <!-- Top Navbar -->
+  <div class="top-bar">
+    <div class="logo">BATTLE <span>ARENA</span></div>
+    <a href="/frontend/pages/main wallet/wallet.html">
+      <div class="coin">
+        <img src="/frontend/img/coin.png.png" class="coinIcon">
+        <span id="coinDisplay">0</span>
+      </div>
+    </a>
+
+
+    <input type="checkbox" id="sidebarToggle">
+
+
+    <label for="sidebarToggle" class="open-btn">☰</label>
+
+
+    <label for="sidebarToggle" class="overlay"></label>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+
+        <label for="sidebarToggle" class="close-btn">✖</label>
+
+
+        <img src="https://i.pravatar.cc/100" class="profile-pic">
+        <h3 class="username">InGameName</h3>
+      </div>
+
+      <div class="menu">
+        <a href="/frontend/index.html">Home</a>
+        <a href="./pages/missions/Ads-coin.html">Daily Mission</a>
+        <a href="./index.html">More Tournament</a>
+        <a href="./pages/my match/myMatch.html">My Match</a>
+        <a href="./pages/main wallet/wallet.html">Wallet</a>
+        <a href="./pages/sideBar/help.html">Help</a>
+        <a href="./pages/sideBar/aboutUs.html">About Us</a>
+        <a href="./pages/sideBar/officialNotice.html">Official Notice</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Modes -->
+  <div class="game-modes">
+    <a href="/frontend/pages/daily/daily.html">
+      <div class="mode"><img src="/frontend/img/freefire13.jpg">
+        <div class="label">DAILY MATCH</div>
+      </div>
+    </a>
+    <a href="/frontend/pages/weekly scrims/scrims.html">
+      <div class="mode"><img src="/frontend/img/freefire12.jpg">
+        <div class="label">WEEKLY SCRIMS</div>
+      </div>
+    </a>
+    <a href="/frontend/pages/cs/clash.html">
+      <div class="mode"><img src="/frontend/img/freefire11.jpg">
+        <div class="label">CLASH SQUAD</div>
+      </div>
+    </a>
+    <a href="/frontend/pages/big/tournament.html">
+      <div class="mode"><img src="/frontend/img/freefire10.jpg">
+        <div class="label">BIG TOURNAMENTS</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Bottom Navbar -->
+  <div class="bottom-bar">
+  
+    <a href="./pages/my match/myMatch.html"><img class="trophy-icons" src="/frontend/img/icons8-trophy-48.png"
+        alt="Trophy"></a>
+    <a href="/frontend/pages/missions/Ads-coin.html"><img class="mission-icons"
+        src="/frontend/img/icons8-task-completed-30.png" alt="Mission"></a>
+    <a href="./pages/sideBar/"><img class="profile-icons" src="/frontend/img/avatar.png" alt="Profile"></a>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Withdraw Coins</title>
+    <link rel="stylesheet" href="withdraw.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <span class="back" onclick="history.back()">←</span>
+
+        <div class="coinArea">
+            <img src="/frontend/img/coin.png.png" class="coinIcon">
+            <span id="coinDisplay">0</span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2>Withdraw Coins</h2>
+
+        <form id="withdrawForm">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="number" id="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="text" id="upi" placeholder="UPI ID" required>
+
+            <input type="number" id="amount" placeholder="Enter Withdraw Coin (Coins)" required>
+
+            <button type="submit" class="submitBtn">Withdraw</button>
+        </form>
+
+    </div>
+
+    <script src="withdraw.js"></script>
+</body>
+
+</html>

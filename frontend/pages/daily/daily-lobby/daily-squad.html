@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Squad Lobby</title>
+
+  <link rel="stylesheet" href="/frontend/styles.css">
+  <link rel="stylesheet" href="daily-lobby.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+</head>
+
+<body>
+
+  <!-- Top Navbar -->
+  <div class="top-bar">
+
+    <div> <a href="/frontend/pages/daily/daily.html">
+        <img class="back-button" src="/frontend/img/left-arrow.png" alt="back"></a>
+    </div>
+    <div class="logo">SQUAD<span>DAILY MATCHES</span>
+    </div>
+    <a href="/frontend/pages/main wallet/wallet.html">
+      <div class="coin">
+        <img src="/frontend/img/coin.png.png" class="coinIcon">
+        <span id="coinDisplay">0</span>
+      </div>
+    </a>
+
+    <!-- SIDEBAR TOGGLE CHECKBOX -->
+    <input type="checkbox" id="sidebarToggle">
+
+    <!-- OPEN SIDEBAR BUTTON -->
+    <label for="sidebarToggle" class="open-btn">☰</label>
+
+    <!-- OVERLAY WHEN SIDEBAR IS OPEN -->
+    <label for="sidebarToggle" class="overlay"></label>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <!-- CLOSE BUTTON -->
+        <label for="sidebarToggle" class="close-btn">✖</label>
+
+        <!-- PROFILE AREA -->
+        <img src="https://i.pravatar.cc/100" class="profile-pic">
+        <h3 class="username">InGameName</h3>
+      </div>
+
+      <div class="menu">
+        <a href="./pages/missions/Ads-coin.html">Daily Mission</a>
+        <a href="./index.html">More Tournament</a>
+        <a href="./pages/my match/myMatch.html">My Match</a>
+        <a href="./pages/main wallet/wallet.html">Wallet</a>
+        <a href="./pages/sideBar/help.html">Help</a>
+        <a href="./pages/sideBar/aboutUs.html">About Us</a>
+        <a href="./pages/sideBar/officialNotice.html">Official Notice</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Modes -->
+  <div class="container">
+    <h1>🎫 Daily SQUAD Lobby Tickets</h1>
+    <div id="ticketsContainer"></div>
+    <a href="/admin/Daily-Admin/daily-squad-Admin/squadAdmin.html" class="link">← Back to Admin</a>
+  </div>
+
+  <!-- Join Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h6>*Fill your correct, EMAIL for Room ID & PASSWORD, If IN GAME NAME & UID will NOT MACHT you will KICK/REMOVE
+        from the room. </h6>
+      <!-- Player 1 -->
+      <div class="players"> Player 1/Leader Detail -</div>
+      <input type="email" id="joinEmail" placeholder="Your Email(forRoom ID & Password)" required>
+      <input type="text" id="InGameName" placeholder="Your InGameName" required>
+      <input type="text" id="InGameUID" placeholder="Your InGame UID" required>
+      <input type="number" id="joinPrice" placeholder="Enter Joining Fee" required>
+      <!-- team Details -->
+      <div class="teamDetailsContainer">Team Details -</div>
+      <input type="text" id="TeamName" placeholder="Your Team Name" required>
+      <!-- Player 2 -->
+      <div class="players"> Player 2 Detail -</div>
+      <input type="email" id="Player2Email" placeholder="Player2 Email Optional(forRoom ID & Password)" required>
+      <input type="text" id="P2InGameName" placeholder="Player2 InGameName" required>
+      <input type="text" id="P2InGameUID" placeholder="Player2 InGame UID" required>
+      <!-- Player 3 -->
+      <div class="players"> Player 3 Detail -</div>
+      <input type="email" id="Player3Email" placeholder="Player3 Email Optional(forRoom ID & Password)" required>
+      <input type="text" id="P3InGameName" placeholder="Player3 InGameName" required>
+      <input type="text" id="P3InGameUID" placeholder="Player3 InGame UID" required>
+      <!-- Player 4 -->
+      <div class="players"> Player 4 Detail -</div>
+      <input type="email" id="Player4Email" placeholder="Player4 Email Optional(forRoom ID & Password)" required>
+      <input type="text" id="P4InGameName" placeholder="Player4 InGameName" required>
+      <input type="text" id="P4InGameUID" placeholder="Player4 InGame UID" required>
+      <!-- Player 5 -->
+      <div class="players"> Player 5 Detail -</div>
+      <input type="email" id="Player5Email" placeholder="Player5 Email Optional(forRoom ID & Password)" required>
+      <input type="text" id="P5InGameName" placeholder="Player5 InGameName" required>
+      <input type="text" id="P5InGameUID" placeholder="Player5 InGame UID" required>
+      <h6>* Leader Must enter Your correct Email</h6>
+
+      <div class="btns">
+        <button id="confirmJoin">Join</button>
+        <button id="closePopup">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="daily-squad.js"></script>
+
+  <!-- Bottom Navbar -->
+  <div class="bottom-bar">
+     <a href="/frontend/index.html"><img class="" src="/frontend/img/icons8-home-50.png"
+        alt="Home"></a>
+    <a href="/frontend/pages/my match/myMatch.html"><img class="trophy-icons" src="/frontend/img/icons8-trophy-48.png"
+        alt="Trophy"></a>
+    <a href="/frontend/pages/missions/Ads-coin.html"><img class="mission-icons"
+        src="/frontend/img/icons8-task-completed-30.png" alt="Mission"></a>
+    <a href="profile.html"><img class="profile-icons" src="/frontend/img/avatar.png" alt="Profile"></a>
+  </div>
+
+</body>
+
+</html>

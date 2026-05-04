@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squad Admin Panel</title>
+  <link rel="stylesheet" href="/host/Daily-Host/Daily-Host.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1> Host Panel - Daily SQUAD Tickets</h1>
+
+    <form id="ticketForm">
+      <input type="text" id="title" placeholder="Enter Title" required>
+      <input type="date" id="date" placeholder="Enter Match Date" required>
+      <input type="text" id="time" placeholder="Enter Match Time" required>
+      <input type="text" id="map" placeholder="Enter Map" required>
+      <input type="number" id="winPrice" placeholder="Enter Win Price" required>
+      <input type="number" id="entryPrice" placeholder="Enter Entry Price" required>
+      <input type="number" id="limit" placeholder="Join Limit" required>
+      <button type="submit" id="saveBtn">Add Ticket</button>
+      <button type="button" id="updateBtn" class="hidden">Update Ticket</button>
+      <button type="button" id="cancelBtn" class="hidden">Cancel</button>
+    </form>
+
+    <h2>📋 All Tickets</h2>
+    <div id="ticketList"></div>
+
+    <a href="/frontend/pages/daily/daily-lobby/daily-squad.html" class="link">Go to Tickets Page ➜</a>
+  </div>
+
+  <script src="squadHost.js"></script>
+</body>
+
+</html>

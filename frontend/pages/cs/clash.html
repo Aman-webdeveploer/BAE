@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS </title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+</head>
+
+<body>
+   <div class="top-bar">
+
+        <div> <a href="/frontend/index.html">
+                <img class="back-button" src="/frontend/img/left-arrow.png" alt="back"></a>
+        </div>
+        <div class="logo">CLASH SQUAD<span>MATCHE</span></div>
+        <a href="/frontend/pages/main wallet/wallet.html">
+            <div class="coin">
+                <img src="/frontend/img/coin.png.png" class="coinIcon">
+                <span id="coinDisplay">0</span>
+            </div>
+        </a>
+
+        <!-- SIDEBAR TOGGLE CHECKBOX -->
+        <input type="checkbox" id="sidebarToggle">
+
+        <!-- OPEN SIDEBAR BUTTON -->
+        <label for="sidebarToggle" class="open-btn">☰</label>
+
+        <!-- OVERLAY WHEN SIDEBAR IS OPEN -->
+        <label for="sidebarToggle" class="overlay"></label>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <!-- CLOSE BUTTON -->
+                <label for="sidebarToggle" class="close-btn">✖</label>
+
+                <!-- PROFILE AREA -->
+                <img src="https://i.pravatar.cc/100" class="profile-pic">
+                <h3 class="username">InGameName</h3>
+            </div>
+
+             <div class="menu">
+                <a href="/frontend/pages/missions/Ads-coin.html">Daily Mission</a>
+                <a href="/frontend/index.html">More Tournament</a>
+                <a href="/frontend/pages/my match/myMatch.html">My Match</a>
+                <a href="/frontend/pages/main wallet/wallet.html">Wallet</a>
+                <a href="/frontend/pages/sideBar/help.html">Help</a>
+                <a href="/frontend/pages/sideBar/aboutUs.html">About Us</a>
+                <a href="/frontend/pages/sideBar/officialNotice.html">Official Notice</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-modes">
+        <a href="../cs/cs-lobby/cs-solo.html">
+            <div class="mode"><img src="/frontend/img/cs solo.jpg">
+                <div class="label">SOLO</div>
+            </div>
+        </a>
+        <a href="../cs/cs-lobby/cs-duo.html">
+            <div class="mode"><img src="/frontend/img/cs duo.jpg">
+                <div class="label">DUO</div>
+            </div>
+        </a>
+        <a href="../cs/cs-lobby/cs-squad.html">
+            <div class="mode"><img src="/frontend/img/cs squad.jpg">
+                <div class="label">SQUAD</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="bottom-bar">
+        <a href="/frontend/index.html"><img class="" src="/frontend/img/icons8-home-50.png"
+        alt="Home"></a>
+        <a href="/frontend/pages/my match/myMatch.html"><img class="trophy-icons" src="/frontend/img/icons8-trophy-48.png" alt="Trophy"></a>
+        <a href="/frontend/pages/missions/Ads-coin.html"><img class="mission-icons" src="/frontend/img/icons8-task-completed-30.png"
+                alt="Mission"></a>
+        <a href="profile.html"><img class="profile-icons" src="/frontend/img/avatar.png" alt="Profile"></a>
+    </div>
+
+        <script>
+        function getCoins() {
+    return parseInt(localStorage.getItem("coins")) || 0;
+}
+
+window.onload = function() {
+    let coins = getCoins();
+
+    document.getElementById("coinDisplay").innerText = coins;
+   
+};
+// Get coins from storage
+function getCoins() {
+    return parseInt(localStorage.getItem("coins")) || 0;
+}
+    </script>
+</body>
+</html>
